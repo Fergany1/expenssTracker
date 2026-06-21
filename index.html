@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenss Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Expenss Tracker</h3>
+            <div id="balanceCon">
+                <div>
+                    <h3>Your Balance</h3>
+                    <h4 id="balanceAmount">0.00</h4>
+                </div>
+                <div id="incomeExpenss">
+                    <div id="income">
+                        <h3>Income</h3>
+                        <h4 id="incomeAmount">0.00</h4>
+                    </div>
+                    <div id="expenss">
+                        <h3>Expenss</h3>
+                        <h4 id="expenssAmount">0.00</h4>
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="mainContent">
+
+                <div id="transactionsCon">
+                    <h2>Transactions</h2>
+                    <li id="listHeader">
+                        <h3>Name</h3>
+                        <h3>Price</h3>
+                        <h3>Date</h3>
+                    </li>
+                    <ul id="transactionList">
+                        <!--Transactions will be here-->
+                    </ul>
+                </div>
+
+                <div id="addTransactions">
+                    <h3>Add Your Transaction</h3>
+
+                    <form id="transactionForm">
+                        <div id="formGroup">
+                            <label for="description">Description</label>
+                            <input type="text" placeholder="Your Description...." id="descriptionTxt">
+                        </div>
+
+                        <div id="formGroup">
+                            <label for="amount">Amount</label>
+                            <input type="text" placeholder="Add Amount" id="amountTxt">
+                            <small>Use negative (-) for expenses</small>
+                        </div>
+                        <button type="submit" id="addBtn">Add</button>
+                    </form>
+                </div>
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

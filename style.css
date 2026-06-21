@@ -1,0 +1,206 @@
+body {
+
+    background-color: rgb(20, 20, 70);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: #9798a3;
+
+
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: auto;
+    max-width: 750px;
+}
+
+#balanceCon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    width: 420px;
+    border: 1px solid rgb(146, 128, 226);
+    border-radius: 10px;
+    background-color: rgb(20, 20, 70);
+
+}
+
+#incomeExpenss {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+#mainContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#transactionCon {
+    border: 1px solid rgb(146, 128, 226);
+
+
+}
+
+ul {
+    margin: 30px 20px;
+    padding: 10px;
+    width: 350px;
+    height: 200px;
+}
+
+li div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+
+    gap: 50px;
+    align-items: center;
+}
+
+li div p {
+    font-size: 16px;
+    color: #37b8d8;
+    font-weight: bold;
+    margin: auto;
+    padding: auto;
+    height: 30px;
+    width: 90px;
+    border-radius: 5px;
+    align-content: center;
+    justify-items: center;
+
+}
+
+ul li {
+    list-style: none;
+    /* Hide default bullets */
+    padding: 0;
+    border: 1px solid rgb(146, 128, 226);
+    border-radius: 5px;
+    margin-top: 0px;
+
+}
+
+#listHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
+    margin: auto;
+    margin-bottom: 0px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(4, 8, 59);
+
+}
+
+ul li {
+    position: relative;
+    padding-left: 25px;
+    /* Make room for the custom icon */
+    margin-bottom: 8px;
+}
+
+ul li::before {
+    content: "✓";
+    /* Insert your custom icon or emoji here */
+    position: absolute;
+
+    left: 1px;
+    bottom: 5px;
+    border: 2px solid rgb(122, 113, 143);
+    border-radius: 50%;
+    color: #26d13d;
+    /* Green checkmark color */
+    font-weight: bold;
+    font-size: 17px;
+}
+
+#addTransactions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid;
+    border-radius: 5px;
+    height: 350px;
+    width: 350px;
+}
+
+#formGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: normal;
+    width: 100%;
+}
+
+input {
+    height: 40px;
+    font-size: 15px;
+
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin: 10px 20px;
+    padding: auto;
+}
+
+small {
+    font-size: 18px;
+    color: black;
+    font-weight: bolder;
+    border: none;
+    margin: 5px;
+    padding: 7px;
+}
+
+button {
+    background-color: rgb(4, 8, 59);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    width: 100%;
+    padding: 5px;
+    margin: 0px;
+    opacity: 1;
+    scale: 1;
+    transition: all ease 0.5s;
+}
+
+button:hover {
+    opacity: 0.9;
+    background-color: #9798a3;
+}
+
+button:active {
+    scale: 0.9;
+    background-color: aliceblue;
+}
+
+.deleteBtn {
+    position: relative;
+    left: 0px;
+
+}
